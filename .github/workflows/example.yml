@@ -1,0 +1,16 @@
+name: Example
+
+on:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./
+        with:
+          payload:
+            key1: value1
+            key2: value2
+            list: |
+              - value1
+              - value2
