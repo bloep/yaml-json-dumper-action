@@ -1,0 +1,10 @@
+name: 'YAML to JSON Dumper'
+author: bloep
+description: 'Dump github action yaml payload into json string'
+inputs:
+  payload:
+    description: 'yaml payload'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

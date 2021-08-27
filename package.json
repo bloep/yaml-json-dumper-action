@@ -1,0 +1,29 @@
+{
+  "name": "@bloep/yaml-json-dumper-action",
+  "version": "0.1.0",
+  "description": "Dump github action yaml payload into json string",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "release": "ncc build -o dist src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloep/yaml-json-dumper-action.git"
+  },
+  "keywords": [
+    "yaml",
+    "actions",
+    "json"
+  ],
+  "author": "bloep",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "@vercel/ncc": "^0.29.0",
+    "typescript": "^4.3.5"
+  }
+}
